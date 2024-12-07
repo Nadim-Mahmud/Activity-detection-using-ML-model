@@ -1,1 +1,4 @@
 DataSet2/
+pca_features/
+tsfresh_features/
+.DS_Store

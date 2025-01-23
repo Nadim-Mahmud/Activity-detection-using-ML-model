@@ -16,7 +16,7 @@ The dataset includes data from 15 individuals (User IDs 13-27) performing variou
 
 To better understand the dataset, we provide visualizations of the sensor data collected from the accelerometer, gyroscope, and magnetometer. These figures are located in the `figures` folder.
 
-<div style="display: flex; justify-content: space-around;">
+<div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
         <img src="figures/accelerometer_data.png" width="270" height="200">
         <p><strong>Accelerometer Data</strong></p>

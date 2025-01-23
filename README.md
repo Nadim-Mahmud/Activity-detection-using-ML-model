@@ -1,6 +1,7 @@
 # Activity Detection Machine Learning Project
 
 ## Project Overview
+
 This project focuses on detecting human activities using machine learning techniques. The dataset includes sensor data from 15 users performing various activities. The data is segmented and features are extracted using a sliding window approach. Multiple machine learning models, including logistic regression, decision trees, random forest, and neural networks, are trained and evaluated. The results indicate that Random Forest, XGBoost, and CNN models perform the best in recognizing activities.
 
 ## Human Activity Recognition Dataset
@@ -17,19 +18,19 @@ To better understand the dataset, we provide visualizations of the sensor data c
 
 <div style="display: flex; justify-content: space-around;">
     <div style="text-align: center;">
-        <img src="figures/accelerometer_data.png" width="300" height="200">
+        <img src="figures/accelerometer_data.png" width="270" height="200">
         <p><strong>Accelerometer Data</strong></p>
         <p>Shows raw acceleration forces in X, Y, and Z <br>
         axes during activities.</p>
     </div>
     <div style="text-align: center;">
-        <img src="figures/gyroscope_data.png" width="300" height="200">
+        <img src="figures/gyroscope_data.png" width="270" height="200">
         <p><strong>Gyroscope Data</strong></p>
         <p>Illustrates rotation rates around X, Y, and Z <br>
         axes.</p>
     </div>
     <div style="text-align: center;">
-        <img src="figures/magnetometer_data.png" width="300" height="200">
+        <img src="figures/magnetometer_data.png" width="270" height="200">
         <p><strong>Magnetometer Data</strong></p>
         <p>Presents magnetic field strength along X, Y, and Z <br>
         axes.</p>
@@ -41,6 +42,7 @@ To better understand the dataset, we provide visualizations of the sensor data c
 This feature extraction process segments accelerometer and gyroscope data using a sliding window approach to compute statistical features for activity recognition. The data is segmented with configurable **window sizes** (e.g., **100**, **200**, **300**, etc.) and **overlap percentages** (e.g., **25%**, **50%**). The step size is calculated as `window_size * (1 - overlap)`. For each segment, the mean, median, variance, and standard deviation are computed for each axis (`x`, `y`, `z`) of the accelerometer and gyroscope data. The process involves segmenting the sensor data for each experiment ID, calculating the features for each window, and appending the user IDs. Missing data is handled appropriately, and the results are aggregated into a DataFrame. The feature files are saved as `features/w{window_size}_o{overlap_percentage}_features.csv` for multiple configurations.
 
 ### Machine Learning Models and Techniques
+
 The uploaded Jupyter Notebook indicates that various machine learning models were utilized. Here’s a list of models and techniques identified from the notebook:
 
 ### Models Used:
